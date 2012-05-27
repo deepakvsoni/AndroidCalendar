@@ -1,0 +1,3 @@
+Android Calendar Fragments
+Contains Fragments which can be reused in applications to show the calendar with events.
+It shows Day/Week/Month views with events read from the local Android calendar.
