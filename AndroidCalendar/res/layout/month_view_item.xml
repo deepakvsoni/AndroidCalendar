@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp"
+    android:background="@drawable/back" >
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:ellipsize="end"
+        android:maxLines="1"
+        style="@style/month_item"
+        android:layout_below="@+id/tvDay" />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:ellipsize="end"
+        android:maxLines="1"
+        style="@style/month_item"
+        android:layout_below="@+id/tvFirst" />
+
+    <TextView
+        android:id="@+id/tvThird"
+		android:ellipsize="end"
+		android:maxLines="1"
+        style="@style/month_item"
+        android:layout_below="@+id/tvSecond" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

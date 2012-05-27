@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp" />
+
+    <ScrollView
+        android:id="@+id/scHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/dtDate" >
+
+        <RelativeLayout
+            android:id="@+id/rlHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.deepak.calendar.TimeRulerView
+                android:id="@+id/timeRuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.gesture.GestureOverlayView
+                android:id="@+id/gestureOverlayView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="78dp" >
+            </android.gesture.GestureOverlayView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <DatePicker
+        android:id="@+id/dtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:spinnersShown="false" />
+
+    <ListView
+        android:id="@+id/lvSchedules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dtDate"
+        android:layout_below="@+id/dtDate"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

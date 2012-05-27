@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/gvDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvMonthYear"
+        android:layout_margin="5dp"
+        android:horizontalSpacing="-1px"
+        android:numColumns="7"
+        android:verticalSpacing="-1px" >
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/tvMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <Button
+            android:id="@+id/btnYearDecrement"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnJan"
+            style="@style/month_button"
+            android:text="@string/jan" />
+
+        <Button
+            android:id="@+id/btnFeb"
+            style="@style/month_button"
+            android:text="@string/feb" />
+
+        <Button
+            android:id="@+id/btnMar"
+            style="@style/month_button"
+            android:text="@string/mar" />
+
+        <Button
+            android:id="@+id/btnApr"
+            style="@style/month_button"
+            android:text="@string/apr" />
+
+        <Button
+            android:id="@+id/btnMay"
+            style="@style/month_button"
+            android:text="@string/may" />
+
+        <Button
+            android:id="@+id/btnJune"
+            style="@style/month_button"
+            android:text="@string/jun" />
+
+        <Button
+            android:id="@+id/btnJuly"
+            style="@style/month_button"
+            android:text="@string/jul" />
+
+        <Button
+            android:id="@+id/btnAug"
+            style="@style/month_button"
+            android:text="@string/aug" />
+
+        <Button
+            android:id="@+id/btnSep"
+            style="@style/month_button"
+            android:text="@string/sep" />
+
+        <Button
+            android:id="@+id/btnOct"
+            style="@style/month_button"
+            android:text="@string/oct" />
+
+        <Button
+            android:id="@+id/btnNov"
+            style="@style/month_button"
+            android:text="@string/nov" />
+
+        <Button
+            android:id="@+id/btnDec"
+            style="@style/month_button"
+            android:text="@string/dec" />
+
+        <Button
+            android:id="@+id/btnYearIncrement"
+            style="@style/month_button" />
+    </LinearLayout>
+
+</RelativeLayout>

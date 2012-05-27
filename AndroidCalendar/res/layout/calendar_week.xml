@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvWeekMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp" />
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llButtons"
+        android:layout_below="@+id/tvWeekMonthYear"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ViewStub
+                android:id="@+id/vsMonday"
+                style="@style/week_item" />
+
+            <ViewStub
+                android:id="@+id/vsTuesday"
+                style="@style/week_item"
+                android:layout_marginLeft="-1px" />
+
+            <ViewStub
+                android:id="@+id/vsWednesday"
+                style="@style/week_item"
+                android:layout_marginLeft="-1px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ViewStub
+                android:id="@+id/vsThursday"
+                style="@style/week_item"
+                android:layout_marginTop="-1px" />
+
+            <ViewStub
+                android:id="@+id/vsFriday"
+                style="@style/week_item"
+                android:layout_marginLeft="-1px"
+                android:layout_marginTop="-1px" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1px"
+                android:layout_marginTop="-1px"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ViewStub
+                    android:id="@+id/vsSaturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout="@layout/week_day_item"
+                    android:visibility="visible" />
+
+                <ViewStub
+                    android:id="@+id/vsSunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout="@layout/week_day_item"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnDecrementMonth"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnWeek1"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnWeek2"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnWeek3"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnWeek4"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnWeek5"
+            style="@style/month_button" />
+
+        <Button
+            android:id="@+id/btnIncrementMonth"
+            style="@style/month_button" />
+    </LinearLayout>
+
+</RelativeLayout>
